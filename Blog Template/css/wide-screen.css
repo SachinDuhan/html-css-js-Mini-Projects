@@ -1,0 +1,8 @@
+@media screen and (min-width: 1356px){
+    .home-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 13rem;
+        min-height: 100vh;
+    }
+}

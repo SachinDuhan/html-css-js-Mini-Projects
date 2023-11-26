@@ -1,0 +1,45 @@
+.banner {
+    height: 15rem;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/articles/44.png") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+.article-heading {
+    margin: 1rem 0;
+}
+
+.article-heading h1 {
+    text-align: center;
+}
+
+.article-info {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-content p{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.33rem;
+}
+
+.article-content {
+    width: 60vw;
+}
+
+.social svg {
+    cursor: pointer;
+}
