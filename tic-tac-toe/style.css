@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Handjet&family=Pacifico&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(37,9,37);
+    /* background-color: rgb(46, 16, 46); */
+    color: white;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 1.3rem;
+}
+
+ul {
+    margin: 0 20px;
+    list-style: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(99, 201, 4);
+    /* border-radius: 20px; */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 93vh;
+}
+
+.welcome img {
+    height: 10rem;
+    width: 10rem;
+}
+
+#start {
+    background-color: rgb(217, 180, 252);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: 1.1rem;
+    padding: 3px;
+}
+
+#start:active {
+    background-color: rgb(175, 108, 238);
+}
+
+
+
+
+
+
+.gameContainer{
+    /* background-color: yellow; */
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover {
+    background-color: rgb(217, 180, 252);
+}
+
+.gameInfo {
+    padding: 0 34px;
+    font-family: 'Handjet', cursive;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bl-0 {
+    border-left: none;
+}
+
+.bb-0 {
+    border-bottom: none;
+}
+
+/* .gameContainer */
+
+#reset {
+    margin: 0 23px;
+    padding: 5px;
+    background-color: rgb(217, 180, 252);
+    border: none;
+    outline: none;
+    border-radius: 15%;
+    cursor: pointer;
+    font-family: 'roboto';
+    font-size: 1.08rem;
+}
+
+#reset:active {
+    background-color: rgb(207, 157, 255);
+}
+
+.info {
+    font-size: 1.08rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.line {
+    background-color: rgb(207, 157, 255);
+    width: 0px;
+    transition: width 1s ease-in-out;
+    height: 3px;
+    position: absolute;
+    display:none;
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .gameContainer {
+        flex-wrap: wrap-reverse;
+    }
+
+    .container {
+        margin-top: 3rem;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+
+    #pta {
+        margin-top: 2rem;
+    }
+
+    #yay {
+        margin-top: 1rem;
+    }
+}
