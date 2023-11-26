@@ -1,0 +1,101 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    background-color: rgba(0,0,0,0.7);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+li {
+    margin: 7px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+form {
+    font-size: 1.1rem;
+    margin:5px auto;
+    width: 60%;
+    text-align: left;
+    padding-left: 21%;
+}
+input, textarea {
+    margin: 5px;
+}
+
+input, textarea {
+    width:60%;
+}
+input[type="radio"]{
+    width: 25px;
+}
+input[name="gender"]:hover {
+    cursor: pointer;
+}
+
+.btn{
+    width: 20%;
+    font-size: 1.1rem;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(143, 143, 143);
+}
+.btn:hover{
+    cursor: pointer;
+
+}
+
+/* div.content::before {
+    content: "";
+    background: url('../static/Gym-structure-1080x675.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+div.wrapper {
+    width: 100%;
+    height: 100%;
+}
+div.wrapper::before {
+    content: "";
+    background: url('../static/Gym-structure-1080x675.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+form {
+    background-color: rgba(255,255,255,0.3);
+}

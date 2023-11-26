@@ -1,0 +1,115 @@
+/* NAVBAR */
+#navbar {
+    flex-direction: column;
+    position: relative
+}
+
+#logo img {
+    height: 5rem;
+}
+
+#navbar ul li {
+    margin:0px;
+    font-size: 1.03rem; 
+}
+
+#navbar ul li a {
+    padding: 2px 10px;
+}
+
+
+
+
+/* HOME */
+#home::before {
+    height: 24em;
+}
+
+#home {
+    padding: 3px 33px;
+    height: 18rem;
+}
+
+#home p {
+    font-size: 0.9rem;
+}
+
+
+/* SERVICES */
+#services {
+    flex-wrap: wrap;
+}
+
+#services .box p{
+    font-size: 0.9rem;
+}
+
+#services .box {
+    margin-top: 1rem;
+    height: 15rem;
+    overflow: scroll;
+}
+
+#services .box img {
+    height: 5rem;
+}
+
+/* CLIENTS */
+#client-section::before {
+    height: 24rem;
+}
+#client-section {
+    height: 25rem;
+}
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+div#clients div.client-item img {
+    height: 6rem;
+    width: 6rem;
+}
+
+/* CONTACT BOX */
+
+#contact-box {
+    width: 19rem;
+}
+
+#contact-box label,
+#contact-box input {
+    font-size: 1rem;
+}
+
+#contact-box textarea {
+    height: 10rem;
+}
+
+#contact-box form div input {
+    width: 13rem;
+}
+
+#contact-box form div textarea {
+    width: 13rem;
+}
+
+#contact-box form div button {
+    width: 13rem;
+}
+/* #contact-box form {
+    width:80%;
+} */
+
+footer .center {
+    font-size: 0.8rem;
+}
+
+/* UTILITY CLASSES */
+.h-primary {
+    font-size: 1.5rem;
+}
+
+.h-secondary {
+    font-size: 1.2rem;
+}

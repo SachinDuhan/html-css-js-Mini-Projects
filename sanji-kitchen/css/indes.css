@@ -1,0 +1,260 @@
+/* CSS RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation bar : Logo and Image */
+#logo {
+    margin: 2px 30px;
+}
+
+#logo img {
+    margin: 3px 5px;
+    height: 56px;
+    position: relative;
+    top: 2px;
+
+}
+/* Navigation bar : List styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: block;
+    margin: 10px 10px;
+    font-size: 1.16em;
+}
+
+#navbar ul li a {
+    padding: 2px 15px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+
+
+
+/* Home Section */
+#home {
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../bg1.png') no-repeat center center/cover;
+    height: 71%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services {
+    margin: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 6px;
+    width: 24rem;
+    border-radius: 23px;
+    background-color: rgb(243, 202, 202);
+}
+
+#services .box img {
+    height: 134px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Clients Section */
+#client-section {
+    height:326px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg.png') no-repeat center center/cover;
+    height: 46%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img{
+    height: 118px;
+}
+
+
+/* Contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.png) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea ,
+#contact-box button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 48%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box input[type="submit"],
+#contact-box button[type="reset"] {
+    margin-top: 5px;
+}
+
+#contact-box input[type="submit"] {
+    background-color: palegreen;
+}
+
+#contact-box button[type="reset"] {
+    background-color: paleturquoise;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.09rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

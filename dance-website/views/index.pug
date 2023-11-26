@@ -1,0 +1,59 @@
+doctype html 
+html 
+    head 
+        title Ballroom Dance Academy
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul
+                div#logo 
+                    img(src='/static/img/3.png')
+                    |Ballroom Academy
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info]
+                li #[a(href='/') Contact us]
+        
+        section#introSection
+            div Welcome to the Ballroom Academy
+            div.small Eat Dance Sleep Repeat
+        
+        section#missionSection 
+            h2 Our Mission
+            .cards 
+                .card 
+                    h3 Elevating Dance Experience 
+                    .card-box 
+                        .card-img 
+                            img(src="/static/img/1.png")
+                        .card-content 
+                            p Explore dance excellence with us, where each step is a journey to perfection.
+                .card 
+                    h3 Dance Freedom
+                    .card-box 
+                        .card-img 
+                            img(src="static/img/2.png")
+                        .card-content 
+                            p Express yourself through diverse dance styles and embrace your passion.
+                .card 
+                    h3 Expert Guidance
+                    .card-box 
+                        .card-img 
+                            img(src="static/img/4.png")
+                        .card-content 
+                            p Receive expert instruction from industry leaders to nurture your dance journey.
+
+        section#sponsorSection 
+            h2 Our Sponsors
+            #sponsors
+                img(src="static/img/sp1.webp")
+                img(src="static/img/sp2.jpg")
+                img(src="static/img/sp3.jpg")
+        
+        footer#footer 
+            | Copyright &copy; 2023 | Ballroom Dance Academy | All rights reserved
+            
+        script 
+            include ../static/index.js

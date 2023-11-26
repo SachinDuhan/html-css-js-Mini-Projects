@@ -1,0 +1,14 @@
+#cardContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card{
+    height: 419.766px;
+}
+
+.card-body>.btn {
+    position: absolute;
+    bottom: 5px;
+}

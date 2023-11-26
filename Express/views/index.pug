@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using Plain HTML in pug</title> -->
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+
+        <div class="content">
+            <h2>Get this gym membershit for $60 - Fill this form NOW!</h2>
+            <form action="/" method="post" id="contact">
+                <label>Name:<br>
+                    <input type="text" name="name" id="name">
+                </label>
+                <br>
+                <label>Age:<br>
+                    <input type="number" name="age" id="age">
+                </label>
+                <br>
+                |Gender:<br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <br>
+                <label>Phone:<br> <input type="phone" name="phone"></input:phone></label>
+                <br>
+                <textarea name="more" id="more" cols="30" rows="10" placeholder="More about yourself...."></textarea>
+                <br>
+                <button type="submit" class="btn">SUBMIT</button>
+            </form>
+            <img src="Gym-structure-1080x675.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
